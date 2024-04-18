@@ -27,7 +27,7 @@ export default function Contact() {
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <div className="lg:w-2/3 md:w-1/2 bg-gray-500 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe
                         width="100%"
                         height="100%"
@@ -42,24 +42,23 @@ export default function Contact() {
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                ADDRESS
+                                LOCATION
                             </h2>
-                            <p className="mt-1">
-                                97 Warren St. <br />
-                                New York, NY 10007
+                            <p className="mt-1 text-white">
+                                Duluth, Georgia, United States <br />
                             </p>
                         </div>
-                        <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <div className="lg:w-1/2 px-6 mt-4 lg:mt-0 text-white">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 EMAIL
                             </h2>
-                            <a className="text-indigo-400 leading-relaxed">
-                                reedbarger@email.com
+                            <a className="text-white leading-relaxed">
+                                Jeffrey.Scoggins@me.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                                PHONE
+                                PHONE:
                             </h2>
-                            <p className="leading-relaxed">123-456-7890</p>
+                            <p className="leading-relaxed">470-588-2466</p>
                         </div>
                     </div>
                 </div>
@@ -72,8 +71,7 @@ export default function Contact() {
                         Hire Me
                     </h2>
                     <p className="leading-relaxed mb-5">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                        suscipit officia aspernatur veritatis. Asperiores, aliquid?
+                        <center>Please send me a message if you would love for me to work you or your company</center>
                     </p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
