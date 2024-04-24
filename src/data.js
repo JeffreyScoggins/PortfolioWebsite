@@ -36,17 +36,18 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+      "\n" +
+        "I recently had a website built by an incredibly talented team, and I couldn't be happier with the results! The website is not only visually stunning but also highly functional and user-friendly. From the seamless navigation to the engaging content, every aspect of the website reflects the dedication and expertise of the developers. They listened attentively to my ideas and turned them into a reality, exceeding my expectations in every way. I highly recommend their services to anyone looking for a professional and top-notch website!",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     name: "Jesse Hicks",
-    company: "Zoozle",
+    company: "Exclaim Restaurant Management",
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+      "I had a fantastic experience working with the team that built my website. They were professional, attentive, and extremely skilled at what they do. The website they created for me is not only visually appealing but also optimized for performance across all devices. The attention to detail is evident in every aspect, from the sleek design to the seamless functionality. I'm thrilled with the outcome and would highly recommend their services to anyone looking to elevate their online presence.",
     image: "https://randomuser.me/api/portraits/men/94.jpg",
     name: "Ruben Alvarez",
-    company: "Dooble.io",
+    company: "Pondfish LLC",
   },
 ];
 
