@@ -12,6 +12,7 @@ export const projects = [
     subtitle: "React and Python",
     description:
       "Shopify Clone built in React with a Python backend."
+    image: "./project-2.gif",
     //link: "",
   },
   {
