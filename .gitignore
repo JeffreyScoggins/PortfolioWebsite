@@ -1,3 +1,4 @@
 ./node_modules
 ./package.json
 ./netlify.toml
+./.env

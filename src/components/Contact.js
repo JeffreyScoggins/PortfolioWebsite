@@ -1,9 +1,52 @@
 import React from "react";
+import emailjs from '@emailjs/browser';
+import env from "process.env.NODE_ENV";
+
+
 
 export default function Contact() {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
+    const form = useRef();
+    const publicKey = env.publicKey;
+    const serviceID = env.serviceID;
+    const templateID = env.templateID;
+
+    emailjs.init({
+        publicKey: publicKey,
+        // Do not allow headless browsers
+        blockHeadless: true,
+        blockList: {
+            // Block the suspended emails
+            list: [],
+            // The variable contains the email address
+            watchVariable: 'userEmail',
+        },
+        limitRate: {
+            // Set the limit rate for the application
+            id: 'app',
+            // Allow 1 request per 30s
+            throttle: 30000,
+        },
+    });
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(serviceID, templateID, form.current, {
+                publicKey: publicKey,
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
 
     function encode(data) {
         return Object.keys(data)
