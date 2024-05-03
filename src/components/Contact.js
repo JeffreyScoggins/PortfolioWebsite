@@ -1,7 +1,5 @@
-import React from "react";
-import emailjs from '@emailjs/browser';
-import env from "process.env.NODE_ENV";
-
+import React, {Component, useRef} from "react";
+import emailjs from 'emailjs-com';
 
 
 export default function Contact() {
@@ -9,9 +7,11 @@ export default function Contact() {
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
     const form = useRef();
-    const publicKey = env.publicKey;
-    const serviceID = env.serviceID;
-    const templateID = env.templateID;
+    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+    const serviceID = process.env.REACT_APP_SERVICE_ID;
+    const templateID = process.env.REACT_APP_PUBLIC_KEY;
+
+
 
     emailjs.init({
         publicKey: publicKey,
